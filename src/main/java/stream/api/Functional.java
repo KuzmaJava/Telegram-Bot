@@ -16,11 +16,7 @@ public class Functional {
      */
     private static void printAllNumbersInListFunctional(List<Integer> numbers) {
         numbers.stream()
-                .forEach(Functional::print);
-    }
-
-    public static void print(Integer number) {
-        System.out.println(number);
+                .forEach(System.out::println);
     }
 
 }
